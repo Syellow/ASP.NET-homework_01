@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form> 
+        <table border="1">
+            <tr>
+                <td>訂單編號</td>
+                <td><input type="text" id="orderId"></td>
+            </tr>
+            <tr>
+                <td>客戶名稱</td>
+                <td><input type="text" id="customerName"></td>
+            </tr>
+            <tr>
+                <td>負責員工</td>
+                <td>
+                    <div id="empDiv">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>出貨公司</td>
+                <td>
+                    <div id="companyDiv">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>訂購日期</td>
+                <td><input type="date" id="orderDate"></td>
+                <td>出貨日期</td>
+                <td><input type="date" id="shipmentDate"></td>
+            </tr>
+            <tr>
+                <td>需要日期</td>
+                <td><input type="date" id="needDate"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="">查詢</button>
+                    <input type="reset" value="清除" />
+                    <button onclick="">新增訂單</button>
+                </td>
+            </tr>
+        </table>
+        <form>
+            查詢結果
+            <table border="1" id="seachResult">
+                <tr>
+                    <td>訂單編號</td>
+                    <td>客戶名稱</td>
+                    <td>訂購日期</td>
+                    <td>發貨日期</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
+
